@@ -1,4 +1,5 @@
-var myText = "Seeking career change in Front-End Web Development";
+// text in jumbotron types when opening the page
+var myText = "Front-End Web Developer based in Bristol";
 var myArray = myText.split("");
 var loopTimer;
 function frameLooper() {

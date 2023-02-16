@@ -1,73 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Hélène Sauvé | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Hélène Sauvé | Portfolio</title>
 </head>
+
 <body>
-    <!-- Navbar -->
+  <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Hélène Sauvé</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://github.com/helenesauve">Github</a>
-                    </li>
-                </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Hélène Sauvé</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/helenesauve">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End of navbar -->
+
+  <!-- jumbotron -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Hey I'm Hélène</h1>
+      <p id="type-text"></p>
+    </div>
+  </div>
+  <!-- end of jumbotron -->
+
+  <!-- About section -->
+  <div class="container">
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <img src="assets/images/helene.jpeg" alt="profile picture of Hélène Sauvé">
+      <p>Currently upskilling for a career change. Studying
+        a 16 week intense Skills Bootcamp in Front-End Web Developer with edX, my learning focuses on HTML, CSS
+        and Javascript.
+        <br>With more than five years experience in Marketing, working both in agency and client-side, I have honed
+        communication and organisation skills over the years.
+        <br>At work and at home, I always strive to learn new skills.
+        <br>Outside of work and this course, I love the outdoors, spending time with friends and dogs and I have a
+        passion for Marcel Proust's <i>In Search of Lost Time</i>.
+      </p>
+    </section>
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+    </section>
+    <!-- Projects section -->
+    <section class="project" id="projects">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Weather Forecast App</h5>
+              <img src="assets/images/weather.jpg" class="card-img-top img-fluid" alt="picture of a dark sky with lightening">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Skills used: JavaScript, JQuery, Open Weather forecast API, local storage</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-      </nav>
-      <!-- End of navbar -->
-
-      <!-- jumbotron -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-4">Hey I'm Hélène</h1>
-          <p id="type-text"></p>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Coffee Curator</h5>
+              <img src="assets/images/coffee.png" class="card-img-top img-fluid" alt="coffee curator app">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Skills used: HTML, CSS, JavaScript, JQuery, Google Maps APIs, AJAX</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- end of jumbotron -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Password Generator</h5>
+              <img src="assets/images/password-generator.png" class="card-img-top img-fluid" alt="image of a password generator">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Skills used:</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Work-Day Scheduler</h5>
+              <img src="assets/images/day-scheduler.png" class="card-img-top img-fluid" alt="image of a work day scheduler">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Skills used: JavaScript, JQuery, Moment.js</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-      <!-- About section -->
-      <section class="about-me" id="about">
-        <h2>About Me</h2>
-        <img src="assets/images/helene.jpeg" alt="profile picture of Hélène Sauvé">
-        <p>I am a marketeer in Higher Education, self-training to become a Front-End Developer. Currently studying
-          a 16 week intense Skills Bootcamp in Front-End Web Developer with edX, my learning focuses on HTML, CSS
-          and Javascript.
-          <br>Outside of work and this course, I love the outdoors, spending time with friends and dogs and I have a
-          passion for Marcel Proust's <i>In Search of Lost Time</i>.
-        </p>
-      </section>
-      <!-- Skills section -->
-      <section class="skills" id="skills">
-        <h2>Skills</h2>
-      </section>
-      <!-- Projects section -->
-      <section class="project" id="projects">
-        <h2>Projects</h2>
-      </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
