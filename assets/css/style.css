@@ -41,6 +41,11 @@ h5 {
     font-weight: bold !important;
 }
 
+#gif {
+    height: 200px;
+    width: auto;
+}
+
 /* Skills section */
 
 .button1 {
