@@ -1,5 +1,5 @@
 // text in jumbotron types when opening the page
-var myText = "Front-End Web Developer based in Bristol";
+var myText = "Front-End Web Developer based in Bristol.";
 var myArray = myText.split("");
 var loopTimer;
 function frameLooper() {
