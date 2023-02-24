@@ -23,6 +23,21 @@ li a {
   height: 500px;
 }
 
+.intro {
+  background-color: transparent;
+}
+
+.intro h1 {
+    background-color: transparent;
+    color: var(--green-colour);
+    font-family: "Gloock", serif;
+  }
+  
+  .intro p {
+    background-color: transparent;
+    color: var(--green-colour);
+  }
+
 /* about section using flexbox */
 .flex-container {
   display: flex;
@@ -41,25 +56,10 @@ li a {
   height: 300px;
 }
 
-.intro {
-  background-color: transparent;
-  color: var(--green-colour);
-}
-
-.intro h1 {
-  background-color: transparent;
-  color: var(--green-colour);
-  font-family: "Gloock", serif;
-}
-
-.intro p {
-  background-color: transparent;
-  color: var(--green-colour);
-}
-
 h2 {
   font-weight: bold !important;
   color: var(--green-colour);
+  font-family: "Gloock", serif;
 }
 
 h5 {
@@ -95,14 +95,15 @@ h5 {
 .expand:hover {
   transform: scale(1.1);
   text-decoration: none !important;
-  background-color: #014421;
+  background-color: var(--green-colour);
   color: var(--white);
 }
 
+/* Projects */
 .card {
-  margin: 20px;
   height: 100%;
-  margin: 20px;
+  background-color: var(--green-colour);
+
 }
 
 /* styling project images to fit in cards */
@@ -134,9 +135,6 @@ video {
   color: var(--white);
 }
 
-/*  skills section */
-
-
 /* website responsiveness */
 
 @media only screen and (max-width: 600px) {
@@ -153,5 +151,9 @@ video {
       .flex-child-2 {
         margin-right: 20px;
         padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
       }
 }
