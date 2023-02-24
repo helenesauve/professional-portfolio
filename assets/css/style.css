@@ -72,6 +72,7 @@ h5 {
 .card {
     margin: 20px;
     background-color: #ADD8E6;
+    height: 90%; 
 }
 
 /* styling project images to fit in cards */
@@ -79,6 +80,11 @@ h5 {
     width: 100%;
     height: 15vw;
     object-fit: cover;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
 
 video {
