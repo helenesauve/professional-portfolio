@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f74a19b708.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
@@ -44,7 +45,7 @@
 
   <!-- jumbotron -->
   <div class="jumbotron">
-    <div class="container">
+    <div class="container intro">
       <h1 class="display-4">Hey I'm Hélène</h1>
       <p id="type-text"></p>
     </div>
@@ -54,7 +55,7 @@
   <!-- About section -->
   <div class="container">
     <hr>
-    <h2>About Me</h2>
+    <h2>. About Me .</h2>
     <hr>
     <section class="flex-container about" id="about">
       <div class="flex-child-1">
@@ -76,7 +77,7 @@
     <!-- Skills section -->
     <section class="skills">
       <hr>
-      <h2>Skills</h2>
+      <h2>. Skills .</h2>
       <hr>
       <button class="button1 expand">HTML</button>
       <button class="button1 expand">CSS</button>
@@ -91,19 +92,29 @@
     <!-- Projects section -->
     <section class="project" id="projects">
       <hr>
-      <h2>Projects</h2>
+      <h2>. Projects .</h2>
       <hr>
+      <div class="card">
+        <img class="card-img-top primary img-fluid rounded" id="gif" src="./assets/images/output.gif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">README Generator</h5>
+          <p class="card-text">A command-line application that uses Node.js to dynamically generate a professional README.md file from a user's input using the NPM Inquirer package.</p>
+          <p class="card-text">Skills used: JavaScript, Node.js, NPM</p>
+          <a href="https://github.com/helenesauve/Password-Generator" target="_blank" class="btn">Check me out</a>
+        </div>
+      </div>
         <div class="row">
           <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">README Generator</h5>
-                <img class="img-fluid" id="gif" src="./assets/images/output.gif" alt="walkthrough video">
-                <p class="card-text">A programme that creates a README file using Node.js. The user is prompted with
-                  questions about the file in the console and the README file is generated using the answers provided.
-                </p>
-                <p class="card-text">Skills used: JavaScript, Node.js, NPM</p>
-                <a href="https://github.com/helenesauve/Password-Generator" target="_blank" class="btn">Check me out</a>
+                <h5 class="card-title">Weather Forecast App</h5>
+                <img class="img-fluid" src="assets/images/weather.jpg" class="card-img-top img-fluid secondary"
+                    alt="picture of a dark sky with lightening">
+                  <p class="card-text">A simple app rendering the weather forecast for the next 5 days for a city input
+                    provided by the user.</p>
+                  <p class="card-text">Skills used: JavaScript, JQuery, Open Weather forecast API, local storage</p>
+                  <a href="https://helenesauve.github.io/weather-dashboard/" target="_blank" class="btn">Check me
+                    out</a>
               </div>
             </div>
           </div>
@@ -111,7 +122,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Work-Day Scheduler</h5>
-                <img class="img-fluid" src="assets/images/day-scheduler.png" class="card-img-top img-fluid"
+                <img class="img-fluid" src="assets/images/day-scheduler.png" class="card-img-top img-fluid secondary"
                   alt="image of a work day scheduler">
                 <p class="card-text">A simple calendar application that allows a user to save events for each hour of
                   the
@@ -125,38 +136,8 @@
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Weather Forecast App</h5>
-                  <img class="img-fluid" src="assets/images/weather.jpg" class="card-img-top img-fluid"
-                    alt="picture of a dark sky with lightening">
-                  <p class="card-text">A simple app rendering the weather forecast for the next 5 days for a city input
-                    provided by the user.</p>
-                  <p class="card-text">Skills used: JavaScript, JQuery, Open Weather forecast API, local storage</p>
-                  <a href="https://helenesauve.github.io/weather-dashboard/" target="_blank" class="btn">Check me
-                    out</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Coffee Curator</h5>
-                  <img class="img-fluid" src="assets/images/coffee.png" class="card-img-top img-fluid" alt="coffee curator app">
-                  <p class="card-text">An app for coffee lovers that quickly finds 5 cafés near you. Requires the Allow
-                    CORS. App built as part of a group work.
-                    Chrome extension to function at the moment.</p>
-                  <p class="card-text">Skills used: HTML, CSS, JavaScript, JQuery, Google Maps APIs, AJAX</p>
-                  <a href="https://harrygarstang.github.io/Coffee-App-Project/" target="_blank" class="btn">Check me
-                    out</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
                   <h5 class="card-title">Password Generator</h5>
-                  <img class="img-fluid" src="assets/images/password-generator.png" class="card-img-top img-fluid"
+                  <img class="img-fluid" src="assets/images/password-generator.png" class="card-img-top img-fluid secondary"
                     alt="image of a password generator">
                   <p class="card-text">A password generator that returns a password based on the user's selected
                     options.
@@ -170,14 +151,13 @@
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Work-Day Scheduler</h5>
-                  <img class="img-fluid" src="assets/images/day-scheduler.png" class="card-img-top img-fluid"
-                    alt="image of a work day scheduler">
-                  <p class="card-text">A simple calendar application that allows a user to save events for each hour of
-                    the
-                    day by modifying the starter code.</p>
-                  <p class="card-text">Skills used: JavaScript, JQuery, Moment.js</p>
-                  <a href="https://github.com/helenesauve/work-day-scheduler" target="_blank" class="btn">Check me
+                  <h5 class="card-title">Coffee Curator</h5>
+                  <img class="img-fluid" src="assets/images/coffee.png" class="card-img-top img-fluid secondary" alt="coffee curator app">
+                  <p class="card-text">An app for coffee lovers that quickly finds 5 cafés near you. Requires the Allow
+                    CORS. App built as part of a group work.
+                    Chrome extension to function at the moment.</p>
+                  <p class="card-text">Skills used: HTML, CSS, JavaScript, JQuery, Google Maps APIs, AJAX</p>
+                  <a href="https://harrygarstang.github.io/Coffee-App-Project/" target="_blank" class="btn">Check me
                     out</a>
                 </div>
               </div>
